@@ -1,0 +1,17 @@
+-- Fake "Roblox Admin Hack" that kicks the exploiter
+local player = game:GetService("Players").LocalPlayer
+
+-- Fake loading effect
+print("Injecting admin privileges... 50%")
+wait(1)
+print("Bypassing anti-cheat... 75%")
+wait(1)
+print("Hack successful! You now have admin! (JK)")
+
+-- Kick them with a funny message
+player:Kick("🚨 LMAO YOU GOT PRANKED! Stop exploiting, nerd. 🚨")
+
+-- Optional: Make it delete their backpack items for extra trolling
+if player:FindFirstChild("Backpack") then
+    player.Backpack:ClearAllChildren()
+end
